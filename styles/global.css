@@ -1,0 +1,27 @@
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+:root {
+	--color-dark-background: rgba(44, 44, 44);
+	--color-light-background: rgba(250, 250, 250);
+	--color-button-promo: rgb(55, 235, 237);
+	--color--logo-1: rgb(40, 150, 249);
+	--color--logo-2: rgb(253, 149, 94);
+	--color--logo-3: rgb(55, 239, 141);
+	--color--button-blue: rgba(10, 188, 235);
+}
+
+.container,
+.cell {
+	margin: 5px;
+	padding: 5px;
+}
+
+.row {
+	padding: 5px;
+}
+
+.container {
+	margin: 0 auto;
+}
