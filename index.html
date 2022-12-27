@@ -11,7 +11,10 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
-    <title>task-html-and-css-rwd</title>
+    <script
+        src="https://kit.fontawesome.com/5e22951e77.js"
+        crossorigin="anonymous"
+    ></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
         rel="stylesheet"
@@ -30,6 +33,8 @@
         rel="stylesheet"
         href="./styles/mobile.css"
     >
+
+    ><i class="fa-solid fa-star"></i>
 </head>
 
 <body>
@@ -101,15 +106,69 @@
     <section class="description row">
         <div class="description__container container">
             <article class="description__article">
-                <h2 class="title title--black">Features that give you real feel</h2>
-                <p class="description__text"></p>
+                <h2 class="title title--black title--black-description">Features that give you real feel</h2>
+                <p class="description__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias nobis quis
+                    placeat amet in vitae similique officiis nam consequatur sunt? Consequuntur expedita totam quaerat
+                    quae voluptatibus illum aut placeat iusto?</p>
             </article>
-            <button></button>
-            <div><img
-                    src=""
-                    alt=""
-                ></div>
+            <button class="button button--blue">Download now</button>
+            <div class="description__img-box">
+                <img
+                    src="./images/draw.png"
+                    alt="draw"
+                >
+            </div>
         </div>
+    </section>
+
+    <section class="review">
+        <div class="review--layer container">
+            <article class="review__box">
+                <h2 class="title review__title">Review from our regular users</h2>
+                <p class="review__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, veritatis soluta.
+                    Distinctio eos at
+                    iure
+                    enim
+                    accusantium. Laudantium nisi sint magni reprehenderit, doloremque expedita ratione ex itaque facere,
+                    enimiste!</p>
+                <div class="review__opinion">
+                    <ul class="review__list">
+                        <li class="review--star"><i class="fa-solid fa-star"></i></li>
+                        <li class="review--star"><i class="fa-solid fa-star"></i></li>
+                        <li class="review--star"><i class="fa-solid fa-star"></i></li>
+                        <li class="review--star"><i class="fa-solid fa-star"></i></li>
+                        <li class="review--star"><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <p class="review__author">-ROBERT SMILE</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="package container">
+        <header class="package__info">
+            <h2 class="title">Unlock full Power</h2>
+            <p class="package__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus pariatur eius iusto ad
+                mollitia.
+            </p>
+        </header>
+        <ul>
+            <li class="package__card">
+                <header class="package__header">
+                    <h5>BASIC</h5>
+                    <h5>$06</h5>
+                </header>
+                <ul>
+                    <li>One User</li>
+                    <li>1000 ui elements</li>
+                    <li>Webmail support</li>
+                    <li>100GB Cloud Storage</li>
+                    <button></button>
+                </ul>
+            </li>
+
+        </ul>
     </section>
 </body>
 
