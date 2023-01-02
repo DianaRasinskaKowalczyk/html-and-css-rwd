@@ -8,21 +8,22 @@ body {
 	--color-light-background: rgba(250, 250, 250);
 	--color-button-promo: rgb(55, 235, 237);
 	--color--logo-1: rgb(40, 150, 249);
-	--color--logo-2: rgb(253, 149, 94);
+	--color--logo-2: rgb(170, 223, 247);
 	--color--logo-3: rgb(55, 239, 141);
 	--color--review-background: rgba(123, 191, 254, 0.8);
+	--color--basic: rgba(208, 227, 247, 0.919);
+	--color--middle: orange;
+	--color--middle-background: rgb(248, 226, 186);
+	--color--bottom-background: rgb(209, 252, 229);
+	--color--round-background: darkgrey;
 }
 
-.container,
-.cell {
+.container {
 	margin: 5px;
 	padding: 5px;
+	margin: 0 auto;
 }
 
 .row {
 	padding: 5px;
-}
-
-.container {
-	margin: 0 auto;
 }
