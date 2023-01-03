@@ -26,12 +26,17 @@
     >
     <link
         rel="stylesheet"
-        media="(max-width: 600px)"
         href="./styles/global.css"
     >
     <link
         rel="stylesheet"
+        media="(max-width: 600px)"
         href="./styles/mobile.css"
+    >
+    <link
+        rel="stylesheet"
+        media="(min-width: 601px)"
+        href="./styles/tablet.css"
     >
 </head>
 
@@ -47,11 +52,13 @@
 
     <section class="promotion row">
         <div class="promotion__container container">
-            <header class="promotion__header">
-                <h1 class="title title--white">Promote Your App With AppLab</h1>
-                <p class="promotion__text">Get more users to promote your app with this template</p>
-            </header>
-            <button class="button promotion__button">Get Start Now</button>
+            <div class="promotion__box">
+                <header class="promotion__header">
+                    <h1 class="title title--white">Promote Your App With AppLab</h1>
+                    <p class="promotion__text">Get more users to promote your app with this template</p>
+                </header>
+                <button class="button promotion__button">Get Start Now</button>
+            </div>
             <figure class="promotion__image--box">
                 <img
                     class="promotion__image"
@@ -102,13 +109,17 @@
 
     <section class="description row">
         <div class="description__container container">
-            <article class="description__article">
-                <h2 class="title title--black title--black-description">Features that give you real feel</h2>
-                <p class="description__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias nobis quis
-                    placeat amet in vitae similique officiis nam consequatur sunt? Consequuntur expedita totam quaerat
-                    quae voluptatibus illum aut placeat iusto?</p>
-            </article>
-            <button class="button button--blue">Download now</button>
+            <div class="description__box">
+                <article class="description__article">
+                    <h2 class="title title--black title--black-description">Features that give you real feel</h2>
+                    <p class="description__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias nobis
+                        quis
+                        placeat amet in vitae similique officiis nam consequatur sunt? Consequuntur expedita totam
+                        quaerat
+                        quae voluptatibus illum aut placeat iusto?</p>
+                </article>
+                <button class="button button--blue">Download now</button>
+            </div>
             <div class="description__img-box">
                 <img
                     src="./images/draw.png"
@@ -144,14 +155,14 @@
 
     <section class="package container">
         <header class="package__info">
-            <h2 class="title">Unlock full Power</h2>
+            <h2 class="title title__package">Unlock full Power</h2>
             <p class="package__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus pariatur eius iusto ad
                 mollitia.
             </p>
         </header>
-        <ul>
-            <li class="package__card">
+        <ul class="package__cards">
+            <li class="package__card package__card--top">
                 <header class="package__header package__header--top">
                     <h5 class="package__title">Basic</h5>
                     <h5 class="package__price package__price--top">$06</h5>
@@ -178,7 +189,7 @@
                     <button class="package__button">Get now</button>
                 </ul>
             </li>
-            <li class="package__card">
+            <li class="package__card package__card--bottom">
                 <header class="package__header package__header--bottom">
                     <h5 class="package__title">Business</h5>
                     <h5 class="package__price package__price--bottom">$06</h5>
@@ -213,43 +224,56 @@
 
     <section class="applab row">
         <div class="applab__container container">
-            <img
-                class="applab__logo"
-                src="./images/logo.png"
-                alt="logo"
-            >
-            <p class="applab__text">Firmament morning sixth subdue darkness creeping gathered divide.</p>
-            <ul class="applab__logo-list">
-                <li class="applab__item"> <i class="applab__icon fab fa-facebook-f"></i></li>
-                <li class="applab__item"> <i class="applab__icon fab fa-twitter"></i></li>
-                <li class="applab__item"> <i class="applab__icon fab fa-instagram"></i></li>
-            </ul>
-            <h3 class="applab__title">Services</h3>
-            <ul>
-                <li class="applab__list-item">Team management</li>
-                <li class="applab__list-item">Collaboration</li>
-                <li class="applab__list-item">Todo</li>
-                <li class="applab__list-item">Events</li>
-            </ul>
-            <h3 class="applab__title">Useful links</h3>
-            <ul>
-                <li class="applab__list-item">Pricing</li>
-                <li class="applab__list-item">Features</li>
-                <li class="applab__list-item">Blog</li>
-                <li class="applab__list-item">Contact</li>
-            </ul>
-            <h3 class="applab__title">
-                Downloads</h3>
-            <ul>
-                <li class="applab__list-item">Download from Apple Store</li>
-                <li class="applab__list-item">Download from Play Store</li>
-            </ul>
+            <article class="applab__box--upper">
+                <div class="applab__logo-box">
+                    <img
+                        class="applab__logo"
+                        src="./images/logo.png"
+                        alt="logo"
+                    >
+                    <p class="applab__text">Firmament morning sixth subdue darkness creeping gathered divide.</p>
+                    <ul class="applab__logo-list">
+                        <li class="applab__item"> <i class="applab__icon fab fa-facebook-f"></i></li>
+                        <li class="applab__item"> <i class="applab__icon fab fa-twitter"></i></li>
+                        <li class="applab__item"> <i class="applab__icon fab fa-instagram"></i></li>
+                    </ul>
+                </div>
+                <div class="applab__services-box">
+                    <h3 class="applab__title">Services</h3>
+                    <ul>
+                        <li class="applab__list-item">Team management</li>
+                        <li class="applab__list-item">Collaboration</li>
+                        <li class="applab__list-item">Todo</li>
+                        <li class="applab__list-item">Events</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="applab__box--lower">
+                <div class="applab__links-box">
+                    <h3 class="applab__title">Useful links</h3>
+                    <ul>
+                        <li class="applab__list-item">Pricing</li>
+                        <li class="applab__list-item">Features</li>
+                        <li class="applab__list-item">Blog</li>
+                        <li class="applab__list-item">Contact</li>
+                    </ul>
+                </div>
+                <div class="applab__downloads-box">
+                    <h3 class="applab__title">
+                        Downloads</h3>
+                    <ul>
+                        <li class="applab__list-item">Download from Apple Store</li>
+                        <li class="applab__list-item">Download from Play Store</li>
+                    </ul>
+                </div>
+            </article>
         </div>
     </section>
     <footer class="footer row">
         <p class="footer__text">Copyright &copy2020 All rights reserved <span class="footer__divide"></span> This
-            template is made with ♥ by <br>
-            <span class="footer__company">ColorLib</span>
+            template is made with ♥ by
+        <p class="footer__company">ColorLib
+        </p>
         </p>
     </footer>
 </body>
