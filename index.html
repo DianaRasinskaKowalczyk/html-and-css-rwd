@@ -38,36 +38,87 @@
         media="(min-width: 601px)"
         href="./styles/tablet.css"
     >
+    <link
+        rel="stylesheet"
+        media="(min-width: 1200px)"
+        href="./styles/desktop.css"
+    >
 </head>
 
 <body>
-    <header class="header row">
-        <img
-            class="header__img"
-            src="./images/logo.png"
-            alt="AppLab"
-        >
-        <button class="header__burger"></button>
-    </header>
-
-    <section class="promotion row">
-        <div class="promotion__container container">
-            <div class="promotion__box">
-                <header class="promotion__header">
-                    <h1 class="title title--white">Promote Your App With AppLab</h1>
-                    <p class="promotion__text">Get more users to promote your app with this template</p>
-                </header>
-                <button class="button promotion__button">Get Start Now</button>
-            </div>
-            <figure class="promotion__image--box">
-                <img
-                    class="promotion__image"
-                    src="./images/phone.png"
-                    alt="phone"
+    <div class="desktop">
+        <header class="header row">
+            <img
+                class="header__img"
+                src="./images/logo.png"
+                alt="AppLab"
+            >
+            <ul class="header__menu">
+                <a
+                    href="#"
+                    class="header__menu-item"
                 >
-            </figure>
-        </div>
-    </section>
+                    <li>Home</li>
+                </a>
+                <a
+                    href="#"
+                    class="header__menu-item"
+                >
+
+                    <li>Features</li>
+                </a>
+                <a
+                    href="#"
+                    class="header__menu-item"
+                >
+
+                    <li>Pricing</li>
+                </a>
+                <a
+                    href="#"
+                    class="header__menu-item"
+                >
+
+                    <li class="header__link-dropdown">Blog</li>
+                </a>
+                <a
+                    href="#"
+                    class="header__menu-item"
+                >
+
+                    <li class="header__link-dropdown">Pages</li>
+                </a>
+                <a
+                    href="#"
+                    class="header__menu-item"
+                >
+
+                    <li>Contact</li>
+                </a>
+            </ul>
+            <button class="header__button">Download</button>
+            <button class="header__burger"></button>
+        </header>
+
+        <section class="promotion row">
+            <div class="promotion__container container">
+                <div class="promotion__box">
+                    <header class="promotion__header">
+                        <h1 class="title title--white">Promote Your App With AppLab</h1>
+                        <p class="promotion__text">Get more users to promote your app with this template</p>
+                    </header>
+                    <button class="button promotion__button">Get Start Now</button>
+                </div>
+                <figure class="promotion__image--box">
+                    <img
+                        class="promotion__image"
+                        src="./images/phone.png"
+                        alt="phone"
+                    >
+                </figure>
+            </div>
+        </section>
+    </div>
 
     <section class="advantages row">
         <div class="advantages__container container">
@@ -155,7 +206,7 @@
 
     <section class="package container">
         <header class="package__info">
-            <h2 class="title title__package">Unlock full Power</h2>
+            <h2 class="title__package">Unlock full Power</h2>
             <p class="package__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus pariatur eius iusto ad
                 mollitia.

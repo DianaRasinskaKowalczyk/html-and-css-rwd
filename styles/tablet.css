@@ -8,6 +8,11 @@
 	min-height: 60px;
 }
 
+.header__menu,
+.header__button {
+	display: none;
+}
+
 .header__img {
 	height: 2.2rem;
 	margin-left: 15px;
@@ -68,6 +73,7 @@
 	font-size: 3.5vw;
 	margin-top: 65px;
 	font-weight: 600;
+	width: 60%;
 }
 
 .title,
@@ -312,6 +318,8 @@
 	color: var(--color-dark-background);
 	font-weight: 600;
 	margin-left: 0;
+	margin-right: 0;
+	font-size: 3.5vw;
 }
 
 .package__info {
