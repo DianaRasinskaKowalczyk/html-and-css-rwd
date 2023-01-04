@@ -11,10 +11,6 @@
 
 .header {
 	background-color: transparent;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	min-height: 60px;
 }
 
 .header__menu,
@@ -27,25 +23,20 @@
 	column-gap: 30px;
 }
 
-.header__menu-item {
+.header__menu-link {
 	text-decoration: none;
 	color: var(--color-light-background);
 }
 
-.header__link-dropdown {
+.header__link--dropdown {
 	position: relative;
 }
 
-.header__link-dropdown::after {
+.header__link--dropdown::after {
 	content: ">";
 	rotate: 90deg;
-	padding-left: 5px;
+	padding-left: 8px;
 	position: absolute;
-}
-
-.header__img {
-	height: 2.2rem;
-	margin-left: 15px;
 }
 
 .header__burger {
@@ -68,18 +59,19 @@
 	background-image: none;
 }
 
-.title {
+.promotion__title {
 	width: 80%;
 }
 
 .promotion__text {
 	font-size: 1.3vw;
 	width: 70%;
+	margin-left: 50px;
 }
 
 .button {
 	min-width: 16%;
-	margin-left: 0;
+	margin-left: 50;
 	font-size: 1.3vw;
 }
 
@@ -87,27 +79,17 @@
 	margin-top: 150px;
 }
 
-.title,
-.promotion__text {
-	margin-left: 0;
-}
-
-.promotion__image--box {
+.promotion__image-box {
 	width: 35vw;
 	margin-top: 150px;
 	margin-left: 0;
-	margin-right: 50px;
 }
 
 /* APPS */
 
-.title--black {
-	color: var(--color-dark-background);
-	font-weight: 600;
+.advantages__title {
 	width: 32%;
-	text-align: center;
-	margin-left: 0;
-	margin-bottom: 20px;
+	margin-top: 120px;
 }
 
 /* DESCRIPTION */
@@ -119,25 +101,37 @@
 
 .description__container {
 	display: flex;
-
-	align-items: center;
 	column-gap: 40px;
 	padding-right: 30px;
 }
 
-.title--black-description {
+.description__box {
+	flex-basis: 50%;
+}
+
+.description__title {
 	margin-top: 80px;
-	text-align: left;
 	width: 90%;
 }
 
+.description__article {
+	margin-left: 10px;
+}
+
+.description__text {
+	text-align: left;
+	font-size: 1.7vw;
+	padding-right: 70px;
+}
+
 .description__img-box {
-	width: 40vw;
+	width: 35vw;
 }
 
 .button--blue {
-	margin-left: 50px;
-	padding: 10px 15px;
+	width: 20vw;
+	margin-left: 10px;
+	padding: 15px 15px;
 }
 
 /* PACKAGE */
@@ -150,29 +144,20 @@
 /* LOGOs */
 
 .logos {
-	background-color: var(--color--logo-1);
 	display: flex;
 	flex-direction: row;
 }
 
 .logos__title {
-	padding-top: 100px;
-	padding-left: 50px;
-	color: var(--color-light-background);
 	font-size: 3.8vw;
-	font-weight: 500;
-	width: 80%;
 	align-self: flex-start;
 	padding-bottom: 70px;
 }
 
 .logos__box {
-	display: flex;
 	margin-top: 0;
 	margin-bottom: 0;
-	column-gap: 5px;
 	width: 30%;
-	justify-content: center;
 	align-items: center;
 	margin-right: 30px;
 }
@@ -188,6 +173,8 @@
 .applab__box--upper {
 	flex-basis: 55%;
 	column-gap: 0px;
+	margin-top: 70px;
+	padding-right: 0;
 }
 
 .applab__box--lower {
@@ -195,15 +182,6 @@
 	column-gap: 50px;
 	flex-basis: 45%;
 	margin-left: 50px;
-}
-
-.applab__box--upper {
-	margin-top: 70px;
-	padding-left: 50px;
-	padding-right: 0;
-}
-
-.applab__box--lower {
 	margin-top: 70px;
 	padding-left: 0;
 	padding-right: 0px;

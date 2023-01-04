@@ -58,10 +58,11 @@
 /* PROMOTION */
 
 .promotion {
-	background-color: var(--color--logo-1);
 	background-image: url(./../images/banner/banner.png);
-	object-fit: contain;
+	object-fit: cover;
 	background-repeat: no-repeat;
+	height: 0;
+	padding-bottom: 180%;
 }
 
 .promotion__container,
@@ -70,16 +71,14 @@
 	flex-direction: column;
 }
 
-.title {
-	font-size: 5.5vw;
-	margin-left: 10px;
-}
-
-.title--white {
+.promotion__title {
 	max-width: 75%;
 	line-height: 1.2em;
 	margin-top: 25px;
 	margin-bottom: 15px;
+	font-size: 5.5vw;
+	margin-left: 10px;
+	font-weight: 900;
 }
 
 .promotion__text {
@@ -89,22 +88,22 @@
 }
 
 .button {
-	max-width: 33%;
-	margin-left: 10px;
+	min-width: 33%;
 	border-radius: 5px;
 	border: none;
-	padding: 18px 34px;
+	padding: 16px 34px;
 	font-size: 2.7vw;
 	color: var(--color-light-background);
 	text-align: center;
 }
 
 .promotion__button {
+	margin-left: 10px;
 	margin-bottom: 70px;
 	background-color: var(--color-button-promo);
 }
 
-.promotion__image--box {
+.promotion__image-box {
 	width: 70vw;
 }
 
@@ -122,12 +121,17 @@
 	align-items: center;
 }
 
-.title--black {
-	margin-bottom: 10px;
+.advantages__title {
 	text-align: center;
+	line-height: 1.2em;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-size: 5.5vw;
+	margin-left: 10px;
+	font-weight: 900;
 }
 
-.advantages__img--box {
+.advantages__img-box {
 	width: 20vw;
 	height: 20vw;
 	border-radius: 20px;
@@ -141,10 +145,6 @@
 	width: 45%;
 }
 
-.advantages__img--blue-box {
-	background-color: var(--color--logo-1);
-}
-
 .advantages__text {
 	font-size: 4vw;
 	margin-top: 25px;
@@ -152,11 +152,15 @@
 	font-weight: 500;
 }
 
-.advantages__img--orange-box {
+.advantages__img-box--blue {
+	background-color: var(--color--logo-1);
+}
+
+.advantages__img-box--orange {
 	background-color: var(--color--middle);
 }
 
-.advantages__img--green-box {
+.advantages__img-box--green {
 	background-color: var(--color--logo-3);
 }
 
@@ -175,8 +179,14 @@
 
 /* DESCRIPTION */
 
-.title--black-description {
+.description__title {
+	text-align: center;
+	line-height: 1.2em;
 	margin-top: 80px;
+	margin-bottom: 15px;
+	font-size: 5.5vw;
+	margin-left: 10px;
+	font-weight: 900;
 }
 
 .description__text {
@@ -216,7 +226,7 @@
 	margin-top: 40px;
 }
 
-.review--layer {
+.review__layer {
 	background-color: var(--color--review-background);
 	position: absolute;
 	top: 0;
@@ -233,7 +243,10 @@
 	color: var(--color-light-background);
 	max-width: 75%;
 	text-align: center;
-	font-weight: 500;
+	font-weight: 900;
+	margin-top: 60px;
+	margin-bottom: 15px;
+	font-size: 5.5vw;
 }
 
 .review__box {
@@ -263,7 +276,7 @@
 	align-items: center;
 }
 
-.review--star {
+.review__star {
 	color: gold;
 	font-size: 3.7vw;
 }
@@ -311,12 +324,12 @@
 	background-color: var(--color--basic);
 }
 
-.title__package {
+.package__title {
 	font-size: 5.5vw;
 }
 
 .package__price,
-.package__title {
+.package__header-title {
 	font-weight: 900;
 }
 
@@ -338,6 +351,7 @@
 }
 
 .package__button {
+	margin-left: 10px;
 	width: 25%;
 	border-radius: 5px;
 	border-color: var(--color--review-background);
@@ -382,6 +396,7 @@
 	color: var(--color-light-background);
 	font-size: 5.5vw;
 	width: 80%;
+	font-weight: 900;
 }
 
 .logos__box {
@@ -417,7 +432,7 @@
 
 .applab__text {
 	color: var(--color--basic);
-	width: 85%;
+	width: 87%;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -480,4 +495,5 @@
 
 .footer__company {
 	color: var(--color--logo-1);
+	font-size: 2.5vw;
 }

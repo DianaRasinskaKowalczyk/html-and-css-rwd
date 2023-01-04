@@ -60,24 +60,23 @@
 .promotion {
 	background-image: url(./../images/banner/banner.png);
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
+	height: 0;
+	padding-top: 50%;
 }
 
 .promotion__container {
 	display: flex;
 	justify-content: center;
 	column-gap: 10px;
+	position: absolute;
+	top: 120px;
 }
 
-.title {
+.promotion__title {
 	font-size: 3.5vw;
-	margin-top: 65px;
 	font-weight: 600;
-	width: 60%;
-}
-
-.title,
-.promotion__text {
+	width: 80%;
 	color: var(--color-light-background);
 	margin-left: 50px;
 }
@@ -87,6 +86,8 @@
 	margin-bottom: 25px;
 	font-size: 2vw;
 	width: 65%;
+	color: var(--color-light-background);
+	margin-left: 50px;
 }
 
 .button {
@@ -104,9 +105,8 @@
 	background-color: var(--color-button-promo);
 }
 
-.promotion__image--box {
-	width: 28vw;
-	margin-top: 65px;
+.promotion__image-box {
+	width: 30vw;
 	margin-left: 0;
 	margin-right: 50px;
 }
@@ -134,16 +134,18 @@
 	align-items: center;
 }
 
-.title--black {
+.advantages__title {
 	color: var(--color-dark-background);
 	font-weight: 600;
 	width: 35%;
 	text-align: center;
 	margin-left: 0;
 	margin-bottom: 20px;
+	margin-top: 50px;
+	font-size: 3.5vw;
 }
 
-.advantages__img--box {
+.advantages__img-box {
 	width: 10vw;
 	height: 10vw;
 	border-radius: 20px;
@@ -157,7 +159,7 @@
 	width: 45%;
 }
 
-.advantages__img--blue-box {
+.advantages__img-box--blue {
 	background-color: var(--color--logo-1);
 }
 
@@ -168,11 +170,11 @@
 	font-weight: 500;
 }
 
-.advantages__img--orange-box {
+.advantages__img-box--orange {
 	background-color: var(--color--middle);
 }
 
-.advantages__img--green-box {
+.advantages__img-box--green {
 	background-color: var(--color--logo-3);
 }
 
@@ -201,10 +203,15 @@
 	width: 50%;
 }
 
-.title--black-description {
-	margin-top: 80px;
+.description__title {
+	margin-top: 100px;
 	text-align: left;
 	width: 35vw;
+	color: var(--color-dark-background);
+	font-weight: 600;
+	margin-left: 0;
+	margin-bottom: 20px;
+	font-size: 3.5vw;
 }
 
 .description__text {
@@ -244,7 +251,7 @@
 	margin-top: 40px;
 }
 
-.review--layer {
+.review__layer {
 	background-color: var(--color--review-background);
 	position: absolute;
 	top: 0;
@@ -261,9 +268,9 @@
 	color: var(--color-light-background);
 	max-width: 40%;
 	text-align: center;
-	margin-left: 0;
-	margin-top: 0;
 	font-weight: 600;
+	width: 35vw;
+	font-size: 3.5vw;
 }
 
 .review__box {
@@ -293,7 +300,7 @@
 	align-items: center;
 }
 
-.review--star {
+.review__star {
 	color: gold;
 	font-size: 2vw;
 }
@@ -314,22 +321,29 @@
 	margin-bottom: 100px;
 }
 
-.title__package {
+.package__info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.package__title {
 	color: var(--color-dark-background);
 	font-weight: 600;
 	margin-left: 0;
 	margin-right: 0;
 	font-size: 3.5vw;
-}
-
-.package__info {
+	max-width: 40%;
 	text-align: center;
+	font-weight: 600;
+	width: 35vw;
 }
 
 .package__text {
 	font-size: 2vw;
 	margin: 20px 60px 10px 60px;
 	width: 65vw;
+	text-align: center;
 }
 
 .package__cards {
@@ -355,7 +369,7 @@
 	background-color: var(--color--basic);
 }
 
-.package__title,
+.package__header-title,
 .package__price {
 	font-weight: 900;
 	font-size: 2.1vw;
@@ -426,7 +440,7 @@
 	padding-top: 100px;
 	padding-left: 50px;
 	color: var(--color-light-background);
-	font-size: 4.5vw;
+	font-size: 5.2vw;
 	font-weight: 500;
 	width: 80%;
 	align-self: flex-start;
@@ -437,16 +451,16 @@
 	margin-top: 20px;
 	column-gap: 5px;
 	margin-bottom: 100px;
-	width: 90%;
 	justify-content: center;
+	margin-right: 20px;
 }
 
 .logos__img-google {
-	width: 27vw;
+	width: 20vw;
 }
 
 .logos__img-app {
-	width: 24vw;
+	width: 17vw;
 }
 
 /* APPLAB */
