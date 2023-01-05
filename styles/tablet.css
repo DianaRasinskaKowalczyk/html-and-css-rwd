@@ -59,10 +59,9 @@
 
 .promotion {
 	background-image: url(./../images/banner/banner.png);
-	background-repeat: no-repeat;
 	background-size: cover;
 	height: 0;
-	padding-top: 50%;
+	padding-top: calc(355 / 700 * 100%);
 }
 
 .promotion__container {
